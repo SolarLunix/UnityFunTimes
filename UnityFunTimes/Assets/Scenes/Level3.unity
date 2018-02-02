@@ -143,8 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c03952285e94dadab8047881a817d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mvSpeed: 5
-  move: 1
+  mvSpeed: 100
   menu: {fileID: 1204734718}
 --- !u!23 &235284538
 MeshRenderer:

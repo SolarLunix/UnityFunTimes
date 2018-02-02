@@ -5,8 +5,11 @@ using UnityEngine;
 public class MoveMenu : MonoBehaviour {
 
 	public float mvSpeed = 100f;
-	public bool move = true;
 	public GameObject menu;
+
+	private bool move = true;
+	private int hold = 10;
+
 
 	// Use this for initialization
 	void Start () {
@@ -28,9 +31,14 @@ public class MoveMenu : MonoBehaviour {
 				transform.position += transform.right * mvSpeed * Time.deltaTime;	
 		}
 
-		if(Input.GetKey(KeyCode.Escape)){
+		if(Input.GetKey(KeyCode.Escape) && hold==10){
 			move = !move;
 			pause();
+			hold = 0;
+		}
+
+		if(hold < 10){
+			hold++;
 		}
 
 	}
