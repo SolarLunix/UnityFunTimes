@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class LevelManager : MonoBehaviour {
 
+	static public int balls = 0;
+
 	public void LoadNextLevel() {
 		int nextLevelNum = SceneManager.GetActiveScene().buildIndex + 1;
 		SceneManager.LoadScene(nextLevelNum);

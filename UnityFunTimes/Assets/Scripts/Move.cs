@@ -23,5 +23,9 @@ public class Move : MonoBehaviour {
 			transform.position -= transform.right * mvSpeed * Time.deltaTime;
 		if(Input.GetKey(KeyCode.D))
 			transform.position += transform.right * mvSpeed * Time.deltaTime;
+		if(Input.GetKey(KeyCode.Q))
+			transform.position -= transform.up * mvSpeed * Time.deltaTime;
+		if(Input.GetKey(KeyCode.E))
+			transform.position += transform.up * mvSpeed * Time.deltaTime;
 	}
 }

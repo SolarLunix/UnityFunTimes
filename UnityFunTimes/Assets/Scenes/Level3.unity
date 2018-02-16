@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 235284539}
   - component: {fileID: 235284538}
   - component: {fileID: 235284537}
+  - component: {fileID: 235284542}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -145,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mvSpeed: 100
   menu: {fileID: 1204734718}
+  menutext: {fileID: 957223218}
 --- !u!23 &235284538
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -159,7 +161,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b3415401ba70e494d996c0b61ff4fa76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -186,11 +188,11 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 235284536}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5253422
+  m_Center: {x: 0, y: 0, z: 0.025342254}
 --- !u!33 &235284540
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -205,12 +207,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 235284536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 265.54462, y: 195.11781, z: -26}
+  m_LocalPosition: {x: 249, y: 160, z: -410}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &235284542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235284536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4418bd6c4d5842f98f3a2621981f0ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &643948045 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224086012494660444, guid: a58e5ab4508434aacb100fdfc7e5b1db,
@@ -227,7 +240,7 @@ GameObject:
   - component: {fileID: 957223221}
   - component: {fileID: 957223220}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -249,7 +262,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 500, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &957223220
 MonoBehaviour:
@@ -277,13 +290,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is a pause menu!
+  m_Text: 'You have nothing in your inventory. '
 --- !u!222 &957223221
 CanvasRenderer:
   m_ObjectHideFlags: 0

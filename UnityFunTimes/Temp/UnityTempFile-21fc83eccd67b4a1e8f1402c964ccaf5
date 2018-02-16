@@ -177,6 +177,7 @@
 -define:UNITY_EDITOR_OSX
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
+'Assets/Scripts/ball.cs'
 'Assets/Scripts/LevelManager.cs'
 'Assets/Scripts/Move.cs'
 'Assets/Scripts/MoveMenu.cs'
